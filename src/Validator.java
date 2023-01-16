@@ -11,7 +11,6 @@ public class Validator {
         Queue<String> maintainQueue = new LinkedList<>();
 
         String temp;
-        boolean level = false;
 
         maintainQueue.add(str);
         visitSet.add(str);
@@ -26,12 +25,7 @@ public class Validator {
                     System.out.println(str.length() + " - " + str);
                 }
 
-                level = true;
                 break;
-            }
-
-            if (level) {
-                continue;
             }
 
             for (int i = 0; i < str.length(); i++) {
